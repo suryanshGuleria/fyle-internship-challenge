@@ -1,6 +1,4 @@
-<div
-  class="border-2 w-full mx-auto bg-white border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
->
+<div class="border-2 w-full mx-auto bg-white border-gray-200 rounded-lg shadow">
   <div class="flex p-5 gap-10 items-center">
     <!-- banner image -->
     <div class="image-container">
@@ -14,12 +12,10 @@
     <!-- about section -->
     <div class="about-container">
       <!-- name and bio -->
-      <h3 class="mb-2 text-6xl font-bold text-gray-900 dark:text-white">
+      <h3 class="mb-2 text-6xl font-bold text-gray-900">
         {{ userData.name }}
       </h3>
-      <span class="text-lg text-gray-500 dark:text-gray-400">{{
-        userData.bio
-      }}</span>
+      <span class="text-lg text-gray-500">{{ userData.bio }}</span>
 
       <!-- location -->
       <div class="location mt-5 flex gap-1">
@@ -53,9 +49,7 @@
             ></path>
           </g>
         </svg>
-        <span class="text-lg text-gray-500 dark:text-gray-400">{{
-          userData.location
-        }}</span>
+        <span class="text-lg text-gray-500">{{ userData.location }}</span>
       </div>
 
       <!-- twitter username -->
@@ -85,7 +79,7 @@
         <a
           href="https://twitter.com/{{ userData.twitter_username }}"
           target="_blank"
-          class="text-lg text-gray-500 dark:text-gray-400"
+          class="text-lg text-gray-500"
           >{{ userData.twitter_username }}</a
         >
       </div>
@@ -136,7 +130,7 @@
         <a
           href="https://github.com/{{ userData.login }}"
           target="_blank"
-          class="text-lg text-gray-500 dark:text-gray-400"
+          class="text-lg text-gray-500"
           >{{ userData.login }}</a
         >
       </div>
